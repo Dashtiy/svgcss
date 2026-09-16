@@ -54,3 +54,22 @@ animation: float 3s ease-in-out infinite, spin 1s linear infinite;
     /* Requirement: CSS Transition */
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+/* 1. The Base Button */
+.rsvp-btn {
+  background-color: #3498db;
+  color: rgb(176, 163, 207);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 2. The Hover State */
+.rsvp-btn:hover {
+  background-color: #2906d9; /* Makes it a slightly darker blue */
+  transform: scale(1.05);    /* Makes it pop out slightly */
+}
