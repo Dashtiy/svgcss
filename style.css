@@ -21,9 +21,27 @@ body {
 .envelope-icon {
   margin-bottom: 1rem;
 }
-/* requirment: CSS keframe animation\
+/* CSS keframe animation*/
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-15px); }
   100% { transform: translateY(0px); }
+}
+
+.floating-star {
+  /* the keyframe animation */
+animation: float 3s ease-in-out infinite, spin 1s linear infinite;
+  margin: 1.5rem 0;
+}
+/* Base button styling */
+.rsvp-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+    /* Requirement: CSS Transition */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
